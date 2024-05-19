@@ -1,10 +1,6 @@
 # Dvs_Printf
 
 <div align="center">
-<h3>simple & dynamic printing animation styles for python</h3>
-</div> 
-
-<div align="center">
     
 [![PyPI Version](https://badge.fury.io/py/dvs-printf.svg)](https://badge.fury.io/py/dvs-printf)
 [![Build Status](https://github.com/dhruvan-vyas/dvs_printf/actions/workflows/module_test.yml/badge.svg)](https://github.com/dhruvan-vyas/dvs_printf/actions)<br>
@@ -13,6 +9,9 @@
 [![PEP8](https://img.shields.io/badge/PEP8-compliant-brightgreen.svg)](https://www.python.org/dev/peps/pep-0008/) 
 </div> 
 
+<div align="center">
+<h3>simple & dynamic printing animation styles for python</h3>
+</div> 
 <a href="https://github.com/dhruvan-vyas/dvs_printf">
 <img src="https://github.com/dhruvan-vyas/dvs_printf/blob/main/card.png?raw=true"><br>
 </a>
