@@ -16,27 +16,32 @@ style --> style is different type if printing animation
         ["typing", "async", "headline", "newsline", "mid", "gunshort", "snip",
         "left", "right", "center", "centerAC", "centerAL", "centerAR", "wave",
         "matrix", "matrix2", "scatter", "fire", "blink", "f2b", "b2f", "help"]\n
-        typing    => print like typing
-        async      => async
-        headline  => print headlines animation
-        newsline  => print running newslines animation
-        mid       => print line from mid
-        left      => value coming from left side of the terminal
-        right     => value coming from right side of the terminal
-        center    => values appear at center of the terminal
-        centerAC  => values arrang at center of the terminal
-        centerAL  => arrang list-item at center-Left on terminal
-        centerAR  => arrang list-item at center-Right on terminal
-        gunshort  => firing the words from short gun
-        snip      => sniping the words from end of the terminal
-        matrix    => print random words to real line
-        matrix2   => print 1st word and 2nd random word and go on
-        scatter   => Scatter effect for each line
-        fire      => appear latters with gap creates flames effect.
-        wave      => creats wave effect with each line.
-        blink     => appear Blink effect from start to end.
-        f2b       => typing and remove word from (back to front)
-        b2f       => typing and remove word from (front to back)\n\n
+
+        |----------|----------------------------------------------|
+        |  option  |                 description                  |
+        |__________|______________________________________________|
+        | typing   | print like typing animation                  |
+      * | async    | print multiple lines simultaneously          |
+        | headline | print like head lines in news                |
+        | newsline | print running newslines animation            |
+        | mid      | print line from mid                          |
+        | left     | value coming from left side of the terminal  |
+        | right    | value coming from right side of the terminal |
+        | center   | animation appear at center of the terminal   |
+        | centerAC | values arrang at center of the terminal      |
+        | centerAL | arrang each-item at center-Left on terminal  |
+        | centerAR | arrang each-item at center-Right on terminal |
+        | gunshort | firing the letters from short gun            |
+        | snip     | sniping the letters from end of the terminal |
+        | matrix   | print random letters to real line            |
+        | matrix2  | print 1st letter and 2nd random letters      |
+        | Scatter  | Scattered latters effect for each line       |
+        | Fire     | appear latters with gap creates flame effect | 
+        | wave     | creates wave effect with each line.          | 
+        | Blink    | appear Blink effect from start to end.       |
+        | f2b      | typing and remove letter from back to front  |
+        | b2f      | typing and remove letter from front to back  |
+        ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯ \n\n
 speed -->  speed of printf's animation 
         defult speed is 3, from (1 to 6)\n
         1 = Very Slow  
@@ -56,39 +61,13 @@ stay --> after style animation whether you want the values OR Not
         print(x, end="",flush=True);sleep(.002)
     print("="*tem_len_line+"\n")
 
-def fuzzy_check(str1, str2, threshold=0.8):
-    """
-    Performs a fuzzy check between two strings.
-    Returns True if similarity is above the threshold, False otherwise.
-    """
-    # Convert both strings to lowercase for case-insensitive comparison
-    # str1 = str1.lower()
-    # str2 = str2.lower()
-
-    # Calculate the minimum length between the two strings
-    min_length = min(len(str1), len(str2))
-
-    # Calculate the Levenshtein distance (edit distance)
-    distance = sum(1 for a, b in zip(str1, str2) if a != b)
-
-    # Calculate similarity ratio
-    similarity_ratio = 1 - (distance / min_length)
-
-    # Check if similarity ratio is above the threshold
-    if similarity_ratio >= threshold:
-        return True
-    else:
-        return False
-
-# # Example usage
-# string1 = "apple"
-# string2 = "aple"
-# threshold = 0.8
-# if fuzzy_check(string1, string2, threshold):
-#     print("Strings are similar.")
-# else:
-#     print("Strings are not similar.")
-
+def fuzzy_check(str1):
+    for str2 in ["typing", "async", "headline", "newsline", "mid", 
+"gunshort", "snip", "left", "right", "center","Fire", "wave", "Blink", 
+"Scatter", "matrix", "f2b", "b2f", "help"]: 
+        if 1 - (sum(1 for a, b in zip(str1, str2) if a != b)/min(len(str1), len(str2)))>=0.6:
+            return str2
+    else:return False
 
 
 def othStyles(values,style,speed,interval,stay):  
@@ -233,49 +212,17 @@ def othStyles(values,style,speed,interval,stay):
             _help()
             for i in values:print(i)
         else:
-            fuzy_style=None
-            for fuz in ["typing", "async", "headline", "newsline", "mid", 
-"gunshort", "snip", "left", "right", "center", "centerAC", "centerAL", "centerAR", 
-"Fire", "wave", "Blink", "Scatter", "matrix", "matrix2", "f2b", "b2f", "help"]: 
-                if fuzzy_check(fuz, style): 
-                    fuzy_style=fuz
-                    break
-
+            fuzy_style=fuzzy_check(style)
             for j in (f'''\n
 \tprintf does not accepts style='{style}' as parameter
 \t{"-"*31}{"^"*len(style)}{"-"*14}\n\t>>> please enter name of style from the list <<<\n\n
 \tstyle_list: [\n\tTyping, async, headline, newsline, mid, gunshort, snip, 
 \tleft, right, center, centerAC, centerAL, centerAR, wave,
-\tmatrix, matrix2, scatter, blink, fire, b2f, f2b, help ]\n\n'''):
-                print(j,end="",flush=True);sleep(.003)
-                
+\tmatrix, matrix2, scatter, blink, fire, b2f, f2b, help ]\n\n
+StyleNameError: styleName '{style}' is not defined. {f"Did you mean: '{fuzy_style}'?" if fuzy_style else "!!!"}
+\n'''):print(j,end="",flush=True);sleep(.003)
             for i in values:print(i);sleep(.05)
     except Exception as EXP:print("\n",EXP,"\n\n")
     finally:
         print(end="\033[?25h")
         del values
-        
-style = "asycn"
-fuzy_style=None
-for fuz in ["typing", "async", "headline", "newsline", "mid", 
-"gunshort", "snip", "left", "right", "center", "centerAC", "centerAL", "centerAR", 
-"Fire", "wave", "blink", "scatter", "matrix", "matrix2",  "f2b", "b2f", "help"]: 
-                if fuzzy_check(fuz, style, threshold=.6): 
-                    fuzy_style=fuz
-                    break
-print(f'''
-    printf does not accepts style='{style}' as parameter 
-    --------------------------------^^^^^---------------
-    >>> please enter name of style from the list <<<
-
-
-    style_list: [
-    Typing, async, headline, newsline, mid, gunshort, snip, 
-    left, right, center, centerAC, centerAL, centerAR, wave,
-    matrix, matrix2, scatter, blink, fire, b2f, f2b, help ]
-
-
-StyleNameError: styleName '{style}' is not defined. Did you mean: '{fuzy_style}'?
-'''
-)
-

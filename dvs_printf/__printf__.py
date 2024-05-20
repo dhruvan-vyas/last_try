@@ -162,41 +162,6 @@ for animation, `default getmat=False`, set as `True, "true", "show"`
                     print(x[:-i]+"|",end="\r")
                     sleep(speed)
                     print(end="\x1b[2K")
-        # elif style=="async": 
-            # tem_size=get_terminal_size()[1]-2 
-            # try:
-            #     if "await " in values[0]:
-            #         tem_z=int(values[0].replace("await","").replace(" ",""))
-            #         if 0<tem_z<=tem_size:tem_size=tem_z
-            #         values.pop(0)
-            # except:pass
-            # max_line_len += 1 
-            # len_val=len(values)
-            # for v in range(0,len_val,tem_size):
-            #     for j in range(max_line_len):
-            #         for i in values[v:v+tem_size]:
-            #             print(i[:j]+("|" if len(i[:j]) < len(i) else " "))
-            #         print(end="\033[F"*(tem_size if len_val>v+tem_size else len_val-v))
-            #         sleep(speed)
-            #     print("\n"*(tem_size-1 if len_val>v+tem_size else len_val-v-1))
-            #     sleep(interval)
-
-        # elif "async" in style: 
-        #     tem_size=get_terminal_size()[1]-2 
-        #     try:tem_size = int(style.replace("async", ""))
-        #     except:pass
-        #     max_line_len += 1
-        #     len_val=len(values)
-        #     for v in range(0,len_val,tem_size):
-        #         for j in range(max_line_len):
-        #             for i in values[v:v+tem_size]:
-        #                 print(i[:j]+("|" if len(i[:j]) < len(i) else " "))
-        #             print(end="\033[F"*(tem_size if len_val>v+tem_size else len_val-v))
-        #             sleep(speed)
-        #         print("\n"*(tem_size-1 if len_val>v+tem_size else len_val-v-1))
-        #         sleep(interval)
-
-        # =========================================================
         elif "async" in style: 
             tem_size=get_terminal_size()[1]-1
             try:
@@ -280,59 +245,3 @@ for animation, `default getmat=False`, set as `True, "true", "show"`
     finally:
         print(end="\033[?25h")
         del values
-
-
-# printf(
-    
-# '''order. She also checks in with the science team to monitor their progress on various research ",
-# "# projects related to the exploration of the star system.",
-# # # "# In the afternoons, Liara participates in crew training exercises, preparing for the unknown" 
-# # # "eration ship Odyssey.Shewakesuptothe" ,
-# ''',
-# #   _________________________________________
-# #  / score  3/2                              \
-# # |-------------------------------------------|
-# # |        Bot                     You        |
-# # |-------------------------------------------|
-# # | Win     3                       2         |
-# # | Lose    2                       3         |
-# # | Tie     1                       1         |
-# # |___________________________________________|
-# # ''',
-# style="centerac",interval=0, speed=6)
-
-# # print("okk")
-
-#  
-print(73*100/107)
-# printf(
-# "hello world",
-# '''The day begins early for Captain Liara aboard the gen
-# # # gentle hum of the ship's engines, a constant reminder of their journey through the vastness of 
-# # # space. After a quick breakfast in the mess hall, she heads to the command deck to review the 
-# # # ship's systems and check in with her crew.
-# 5
-# # # order. She also checks in with the science team to monitor their progress on various research 
-# # # projects related to the exploration of the star system.
-# # # In the afternoons, Liara participates in crew training exercises, preparing for the unknown 
-# # eration ship Odyssey.Shewakesuptothe 
-# h
-# g
-# g
-# d
-# s''',speed=1,  interval=0, style="async")
-# print("1:",250/100*25, 62.5*4)
-
-# print("hello world")
-
-# style="async 5 "
-
-# '''
-# sring(======================)
-# ------------------------------------------------------------------------
-#                                center
-
-#          hear
-# 200/100*25                      
-   
-# '''

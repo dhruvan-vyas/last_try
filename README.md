@@ -46,10 +46,8 @@ Use Cases:
 
 
 # installation 
-
-choose one liner command according to your system. 
+choose one liner command according to your system. <br>
 Ensure that `pip` & `git` is installed and working on your system.
-
 
 #### **Linux / MacOS**
 ```bash
@@ -60,6 +58,7 @@ python3 -m pip install dvs_printf
 ```
 
 #### **Windows** 
+
 ```bash
 pip install dvs_printf
 ```
@@ -67,10 +66,15 @@ pip install dvs_printf
 python -m pip install dvs_printf
 ```
 
+<div align="center">
+
 #### **Clone the repository**
 ```bash
 git clone https://github.com/dhruvan-vyas/test_dvs_printf.git
 ```
+
+</div>
+
 ---
 
 <br>
@@ -145,7 +149,6 @@ printf(values, style="center")
 | | f2b      | typing and remove letter from back to front  |
 | | b2f      | typing and remove letter from front to back  |
 
-
 #### ****async Style**** 
 - Introducing a novel printing style—async. This style revolutionizes the way multiple lines are printed simultaneously, 
 optimizing display in both spacious and constrained terminals.
@@ -178,8 +181,6 @@ printf(
 ```    
 Please note that the terms "async" in this context do not relate to the async-IO functions in Python, 
 but rather follow a Async-style naming convention specific to the dvs_printf module.
-
-Experience seamless, adaptive printing with the each difrent style!
 
 ### speed
 Speed defins printf's animation speed, `default speed is 3` you can set `speed from ( 1 to 6 or 7)`
@@ -302,13 +303,15 @@ as shown in this code-snippet we have `the dynamic init method`,
 we can `preset all parameters` and can be `change at any point` according to your needs. <br>
 `keywords inside printf` function has the most priority,
 then Setter Variables `Ex. set_speed` has the second priority, and `keywords inside init` method has the third priority and
-if do not give init parameters it `works on default parameters`.
+if NOT Any parameters Are give, it `works on default parameters` at Last priority.
 
-* **priority of parameters**
-      1. *printf's keywords*
-      2. *setter Veriables*
-      3. *dvs_printf.init's keywords*
-      4. *the defaults*
+
+**priority of parameters**
+
+<div align="center">
+
+**printf's keywords** *>* **setter Veriables** *>* **dvs_printf.init's keywords** *>* **the defaults**
+</div>
       
 ---
 <br>
