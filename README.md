@@ -66,14 +66,10 @@ pip install dvs_printf
 python -m pip install dvs_printf
 ```
 
-<div align="center">
-
 #### **Clone the repository**
 ```bash
 git clone https://github.com/dhruvan-vyas/test_dvs_printf.git
 ```
-
-</div>
 
 ---
 
