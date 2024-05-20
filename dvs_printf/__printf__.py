@@ -13,7 +13,7 @@ def divide_string(string="", tem_len:int|None=None) -> list[str]:
         list_.extend(divide_string(string[tem_len-i:], tem_len))
     else:list_.append(string)
     return list_
-
+# 157,213,251
 def listfunction(*values: tuple , getmat: bool | str | None = False) -> list[str]:
     """Takes any values in tuple -> list[str] \n
 return list with each elements given. takes any DataType and gives `list[str]`\\

@@ -24,11 +24,21 @@ The module offers `printf` style animation functions that designed to enhance th
 Key features include different animation styles, customizable speeds, and flexible formatting options. 
 
 dvs_printf module include 3 main function and 1 sub function
+<!-- <a href="#printf-function" style="text-decoration:none">printf</a> -->
 
-* *[printf](#printf-function)* (core of the module)
-* *[init](#dvs_printfinit-method)* (dynamic initializer for `printf`)
+```python
+from dvs_printf import *        
+```
+
+* *<a href=#printf-function style="text-decoration:none">printf</a>* (core of the module)
+* *<a href=#dvs_printfinit-method style="text-decoration:none">init</a>* (dynamic initializer for `printf`)
+* *<a href=#showloding-function style="text-decoration:none">showLoding</a>* (creates loding bar)
+* *<a href=#listfunction style="text-decoration:none">listfunction</a>* (Supplementary function)
+
+
+<!-- * *[init](#dvs_printfinit-method)* (dynamic initializer for `printf`)
 * *[showLoding](#showloding-function)* (creates loding bar)
-* *[listfunction](#listfunction)* (Supplementary function)
+* *[listfunction](#listfunction)* (Supplementary function) -->
 
 Use Cases:
 
@@ -66,19 +76,14 @@ pip install dvs_printf
 python -m pip install dvs_printf
 ```
 
-<div align="center">
-
 #### **Clone the repository**
 ```bash
 git clone https://github.com/dhruvan-vyas/test_dvs_printf.git
 ```
 
-</div>
-
 ---
 
 <br>
-
 
 # printf function 
 
@@ -101,13 +106,12 @@ and you can give multiple input as any-data-type.
 animation workd separately for each element given, 
 and for each item in given iterable.
 
-
 ```python              
 printf(any, str, list, [tuple, set], dict, int, float,...)
 ```     
 
-### style
-
+<!-- ### style -->
+### <text style="color:rgb(157, 213, 251)">Style</a>
 
 https://github.com/dhruvan-vyas/dvs_printf/assets/98950841/98616314-fcbf-4ea0-9748-6b60bd2cc3b7
 
@@ -116,11 +120,14 @@ style defins different types of console output animation.<br>
 each style type works differently according to the description below
 
 
+
 ``` python
 style: ["typing", "async", "headline", "newsline", "mid", "gunshort", "snip", 
     "left", "right", "center", "centerAC", "centerAL", "centerAR", "Fire", 
     "wave", "Blink", "Scatter", "matrix", "matrix2", "f2b", "b2f", "help"]
 ``` 
+
+
 ``` python
 printf(values, style="center")
 ``` 
@@ -150,7 +157,7 @@ printf(values, style="center")
 | | b2f      | typing and remove letter from front to back  |
 
 #### ****async Style**** 
-- Introducing a novel printing style—async. This style revolutionizes the way multiple lines are printed simultaneously, 
+Introducing a novel printing style—async. This style revolutionizes the way multiple lines are printed simultaneously, 
 optimizing display in both spacious and constrained terminals.
 
 *Key Features:*
@@ -182,7 +189,9 @@ printf(
 Please note that the terms "async" in this context do not relate to the async-IO functions in Python, 
 but rather follow a Async-style naming convention specific to the dvs_printf module.
 
-### speed
+<!-- ### <text style="color:rgb(119, 212, 225)">speed</a> -->
+### <text style="color:rgb(157, 213, 251)">speed</a>
+
 Speed defins printf's animation speed, `default speed is 3` you can set `speed from ( 1 to 6 or 7)`
 each style's speed is littel difrent 
 
@@ -203,7 +212,8 @@ printf("hello world", speed=2)
 ```
 
 
-### interval
+<!-- ### interval -->
+### <text style="color:rgb(157, 213, 251)">interval</a>
 interval is waiting time between printing 
 of two lines (interval in second) <br>
 `default interval is 1`, 
@@ -247,10 +257,10 @@ printf("hello world",
 matrix data modifier works with `numpy, pytorch, tensorflo, pandas, list`, Default = False <br>
 can set as `True, "true", "show"`. getmat parameter directly passing to the listfunction 
 
-more about getmat on [listfunction](#listfunction)
-
+more about getmat on <a href=#listfunction style="text-decoration:none">listfunction</a>
 
 ---
+
 <br>
 
 # dvs_printf.init Method
@@ -291,9 +301,7 @@ pf = dvs_printf.init(style="right")       # last priority
 printf = pf.printf
 
 pf.set_style = "matrix"                   # 2nd priority  
-
 printf("hello world", style="headline")   # 1st priority 
-
 printf("walcome to my project")           # in this case style = "matrix" 
 ```
 it works same `for all parameters.`
@@ -302,7 +310,7 @@ the `init` function has the `same keyword and defaults` `as printf.`
 as shown in this code-snippet we have `the dynamic init method`, 
 we can `preset all parameters` and can be `change at any point` according to your needs. <br>
 `keywords inside printf` function has the most priority,
-then Setter Variables `Ex. set_speed` has the second priority, and `keywords inside init` method has the third priority and
+then `Setter Variables Ex. set_speed` has the second priority, and `keywords inside init` method has the third priority and
 if NOT Any parameters Are give, it `works on default parameters` at Last priority.
 
 
@@ -310,7 +318,10 @@ if NOT Any parameters Are give, it `works on default parameters` at Last priorit
 
 <div align="center">
 
-**printf's keywords** *>* **setter Veriables** *>* **dvs_printf.init's keywords** *>* **the defaults**
+**printf's keywords** 
+*>* **setter Veriables** 
+*>* **init's keywords** 
+*>* **the defaults**
 </div>
       
 ---
@@ -437,7 +448,6 @@ So, "false" is True
 ```
 <br>
 
-
 ```python
 import tensorflow as tf
 tf_array = tf.Variable([   # Example Variable (tf_array)
@@ -477,5 +487,7 @@ listfunction(tf_array, getmat="show")   # "show"
     "shape: (1, 3, 3)>"
 ]
 ```
+The Module automatically check the size of the window and adjust what it shows accordingly.
+Some Visual elements like Long Line should shrink depending on how much space is available.
 
 
