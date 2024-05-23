@@ -85,8 +85,8 @@ git clone https://github.com/dhruvan-vyas/test_dvs_printf.git
 
 <br>
 
-<!-- # printf function  -->
-# <text style="color:rgb(237, 127, 43);"> printf function</a> 
+# printf function 
+<!-- # <text style="color:rgb(237, 127, 43);"> printf function</a>  -->
 <!-- # <text style="color:rgb(79, 189, 201);"> printf function</a>  -->
 
 
@@ -103,7 +103,7 @@ printf(values, style='typing', speed=3, interval=2, stay=True, getmat=False) # d
 ```
 
 <!-- ### values -->
-### <text style="color:rgb(157, 213, 251)">Values</a>
+### <text style="color:rgb(237, 127, 43)">Values</a>
 
 values stream can be anything like
 `(string, int, float, list, set, tuple, dict)`
@@ -116,7 +116,7 @@ printf(any, str, list, [tuple, set], dict, int, float,...)
 ```     
 
 <!-- ### style -->
-### <text style="color:rgb(157, 213, 251)">Style</a>
+### <text style="color:rgb(237, 127, 43)">Style</a>
 
 https://github.com/dhruvan-vyas/dvs_printf/assets/98950841/98616314-fcbf-4ea0-9748-6b60bd2cc3b7
 
@@ -139,17 +139,17 @@ printf(values, style="center")
 
 | |  option  |                 description                  |
 |-| -------- | -------------------------------------------- |
-| | typing   | print like typing animation (Default)        |
+|*| typing   | print like typing animation (Default)        |
 |*| *[Async](#async-style)* | print multiple lines simultaneously |
 | | headline | print like head lines in news                |
 | | newsline | print running newslines animation            |
 | | mid      | print line from mid                          |
-| | left     | value coming from left side of the terminal  |
-| | right    | value coming from right side of the terminal |
-| | center   | animation appear at center of the terminal   |
+|*| left     | value coming from left side of the terminal  |
+|*| right    | value coming from right side of the terminal |
+|*| center   | animation appear at center of the terminal   |
 | | centerAC | values arrang at center of the terminal      |
-| | centerAL | arrang each-item at center-Left on terminal  |
-| | centerAR | arrang each-item at center-Right on terminal |
+|*| centerAL | arrang each-item at center-Left on terminal  |
+|*| centerAR | arrang each-item at center-Right on terminal |
 | | gunshort | firing the letters from short gun            |
 | | snip     | sniping the letters from end of the terminal |
 | | matrix   | print random letters to real line            |
@@ -163,7 +163,9 @@ printf(values, style="center")
 
 <!-- #### ****async Style****  -->
 
-### <text style="color:rgb(157, 213, 251)">async Style</a>
+<!-- ### <text style="color:rgb(157, 213, 251)">async Style</a> -->
+
+### <text style="color:rgb(237, 127, 43)">async Style</a>
 
 Introducing a novel printing style—async. This style revolutionizes the way multiple lines are printed simultaneously, 
 optimizing display in both spacious and constrained terminals.
@@ -198,7 +200,7 @@ Please note that the terms "async" in this context do not relate to the async-IO
 but rather follow a Async-style naming convention specific to the dvs_printf module.
 
 <!-- ### <text style="color:rgb(119, 212, 225)">speed</a> -->
-### <text style="color:rgb(157, 213, 251)">speed</a>
+### <text style="color:rgb(237, 127, 43)">speed</a>
 
 Speed defins printf's animation speed, `default speed is 3` you can set `speed from ( 1 to 6 or 7)`
 each style's speed is littel difrent 
@@ -221,7 +223,8 @@ printf("hello world", speed=2)
 
 
 <!-- ### interval -->
-### <text style="color:rgb(157, 213, 251)">interval</a>
+### <text style="color:rgb(237, 127, 43)">interval</text>
+
 interval is waiting time between printing 
 of two lines (interval in second) <br>
 `default interval is 1`, 
@@ -238,7 +241,7 @@ printf("hello world", "hii, I am coder", interval=2)
 
 
 <!-- ### stay -->
-### <text style="color:rgb(157, 213, 251)">Stay</a>
+### <text style="color:rgb(237, 127, 43)">Stay</a>
 stay decides after style animation whether you want the `values on stream OR Not`.
 stay can be True or False, `(default stay = True)`.
 if you want to remove printed line. you can set `stay=False`. 
@@ -263,7 +266,7 @@ printf("hello world",
 ```  
 
 <!-- ### getmat -->
-### <text style="color:rgb(157, 213, 251)">getmat</a>
+### <text style="color:rgb(237, 127, 43)">getmat</a>
 
 matrix data modifier works with `numpy, pytorch, tensorflo, pandas, list`, Default = False <br>
 can set as `True, "true", "show"`. getmat parameter directly passing to the listfunction 
