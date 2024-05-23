@@ -1,24 +1,18 @@
 # Dvs_Printf
 
 <div align="center">
-<h2>Simple & Dynamic console animation styles for python</h2>
-</div> 
-
-<div align="center">
+<h3>Simple & Dynamic console animation styles for python</h3>
     
 [![PyPI Version](https://badge.fury.io/py/dvs-printf.svg)](https://badge.fury.io/py/dvs-printf)
 [![Build Status](https://github.com/dhruvan-vyas/dvs_printf/actions/workflows/module_test.yml/badge.svg)](https://github.com/dhruvan-vyas/dvs_printf/actions)<br>
 ![Python Versions](https://img.shields.io/badge/python-3.10%20%7C%203.11%20%7C%203.12-blue)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/dhruvan-vyas/dvs_printf/blob/main/LICENSE)
 [![PEP8](https://img.shields.io/badge/PEP8-compliant-brightgreen.svg)](https://www.python.org/dev/peps/pep-0008/) 
+
+<img src="https://github.com/dhruvan-vyas/dvs_printf/blob/main/card.png?raw=true">
+
 </div> 
 
-<!-- <a href="https://github.com/dhruvan-vyas/dvs_printf"> -->
-<img src="https://github.com/dhruvan-vyas/dvs_printf/blob/main/card.png?raw=true">
-<!-- <br>
-</a> -->
-
-<br>
 
 enhance way to handle console output for Python projects. 
 The module offers `printf` style animation functions that designed to enhance the visual appearance of terminal-based Python projects,
@@ -32,10 +26,6 @@ dvs_printf module include 3 main function and 1 sub function
 * *[showLoding](#showloding-function)* (creates loding bar)
 * *[listfunction](#listfunction)* (Supplementary function)
 
-
-<!-- * *[init](#dvs_printfinit-method)* (dynamic initializer for `printf`)
-* *[showLoding](#showloding-function)* (creates loding bar)
-* *[listfunction](#listfunction)* (Supplementary function) -->
 
 Use Cases:
 
