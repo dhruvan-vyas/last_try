@@ -1,7 +1,7 @@
 # Dvs_Printf
 
 <div align="center">
-<h3>simple & dynamic printing animation styles for python</h3>
+<h2>Simple & Dynamic console animation styles for python</h2>
 </div> 
 
 <div align="center">
@@ -13,9 +13,10 @@
 [![PEP8](https://img.shields.io/badge/PEP8-compliant-brightgreen.svg)](https://www.python.org/dev/peps/pep-0008/) 
 </div> 
 
-<a href="https://github.com/dhruvan-vyas/dvs_printf">
-<img src="https://github.com/dhruvan-vyas/dvs_printf/blob/main/card.png?raw=true"><br>
-</a>
+<!-- <a href="https://github.com/dhruvan-vyas/dvs_printf"> -->
+<img src="https://github.com/dhruvan-vyas/dvs_printf/blob/main/card.png?raw=true">
+<!-- <br>
+</a> -->
 
 <br>
 
@@ -26,10 +27,10 @@ Key features include different animation styles, customizable speeds, and flexib
 dvs_printf module include 3 main function and 1 sub function
 <!-- <a href="#printf-function" style="text-decoration:none">printf</a> -->
 
-* *<a href=#printf-function style="text-decoration:none">printf</a>* (core of the module)
-* *<a href=#dvs_printfinit-method style="text-decoration:none">init</a>* (dynamic initializer for `printf`)
-* *<a href=#showloding-function style="text-decoration:none">showLoding</a>* (creates loding bar)
-* *<a href=#listfunction style="text-decoration:none">listfunction</a>* (Supplementary function)
+* *[printf](#printf-function)* (core of the module)
+* *[init](#dvs_printfinit-method)* (dynamic initializer for `printf`)
+* *[showLoding](#showloding-function)* (creates loding bar)
+* *[listfunction](#listfunction)* (Supplementary function)
 
 
 <!-- * *[init](#dvs_printfinit-method)* (dynamic initializer for `printf`)
@@ -137,7 +138,7 @@ printf(values, style="center")
 |*| left     | value coming from left side of the terminal  |
 |*| right    | value coming from right side of the terminal |
 |*| center   | animation appear at center of the terminal   |
-| | centerAC | values arrang at center of the terminal      |
+|*| centerAC | values arrang at center of the terminal      |
 |*| centerAL | arrang each-item at center-Left on terminal  |
 |*| centerAR | arrang each-item at center-Right on terminal |
 | | gunshort | firing the letters from short gun            |
@@ -307,10 +308,7 @@ we can `preset all parameters` and can be `change at any point` according to you
 
 <div align="center" style="color:rgb(175, 145, 223)">
 
-**printf's keywords** 
-*>* **setter Veriables** 
-*>* **init's keywords** 
-*>* **the defaults**
+**printf's keywords** *>* **setter Veriables** *>* **init's keywords** *>* **the defaults**
 </div>
 
 `keywords inside printf` function has the most priority,
