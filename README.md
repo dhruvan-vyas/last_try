@@ -26,10 +26,6 @@ Key features include different animation styles, customizable speeds, and flexib
 dvs_printf module include 3 main function and 1 sub function
 <!-- <a href="#printf-function" style="text-decoration:none">printf</a> -->
 
-```python
-from dvs_printf import *        
-```
-
 * *<a href=#printf-function style="text-decoration:none">printf</a>* (core of the module)
 * *<a href=#dvs_printfinit-method style="text-decoration:none">init</a>* (dynamic initializer for `printf`)
 * *<a href=#showloding-function style="text-decoration:none">showLoding</a>* (creates loding bar)
@@ -86,9 +82,6 @@ git clone https://github.com/dhruvan-vyas/test_dvs_printf.git
 <br>
 
 # printf function 
-<!-- # <text style="color:rgb(237, 127, 43);"> printf function</a>  -->
-<!-- # <text style="color:rgb(79, 189, 201);"> printf function</a>  -->
-
 
 The printf function allow users to apply various animation styles to their values. 
 Supports different data types ***(string, int, float, list, set, tuple, dict)*** and 
@@ -102,9 +95,7 @@ from dvs_printf import printf
 printf(values, style='typing', speed=3, interval=2, stay=True, getmat=False) # defaults
 ```
 
-<!-- ### values -->
-### <text style="color:rgb(237, 127, 43)">Values</a>
-
+### values
 values stream can be anything like
 `(string, int, float, list, set, tuple, dict)`
 and you can give multiple input as any-data-type.
@@ -115,8 +106,7 @@ and for each item in given iterable.
 printf(any, str, list, [tuple, set], dict, int, float,...)
 ```     
 
-<!-- ### style -->
-### <text style="color:rgb(237, 127, 43)">Style</a>
+### style
 
 https://github.com/dhruvan-vyas/dvs_printf/assets/98950841/98616314-fcbf-4ea0-9748-6b60bd2cc3b7
 
@@ -161,11 +151,7 @@ printf(values, style="center")
 | | f2b      | typing and remove letter from back to front  |
 | | b2f      | typing and remove letter from front to back  |
 
-<!-- #### ****async Style****  -->
-
-<!-- ### <text style="color:rgb(157, 213, 251)">async Style</a> -->
-
-### <text style="color:rgb(237, 127, 43)">async Style</a>
+#### ****async Style**** 
 
 Introducing a novel printing style—async. This style revolutionizes the way multiple lines are printed simultaneously, 
 optimizing display in both spacious and constrained terminals.
@@ -199,15 +185,12 @@ printf(
 Please note that the terms "async" in this context do not relate to the async-IO functions in Python, 
 but rather follow a Async-style naming convention specific to the dvs_printf module.
 
-<!-- ### <text style="color:rgb(119, 212, 225)">speed</a> -->
-### <text style="color:rgb(237, 127, 43)">speed</a>
 
+### Speed
 Speed defins printf's animation speed, `default speed is 3` you can set `speed from ( 1 to 6 or 7)`
 each style's speed is littel difrent 
 
-
 https://github.com/dhruvan-vyas/dvs_printf/assets/98950841/9e4ef430-b376-4f8a-b24f-f6b580d2c5c9
-
 
 * 1 = *Very Slow*
 * 2 = *Slow*
@@ -222,9 +205,7 @@ printf("hello world", speed=2)
 ```
 
 
-<!-- ### interval -->
-### <text style="color:rgb(237, 127, 43)">interval</text>
-
+### interval
 interval is waiting time between printing 
 of two lines (interval in second) <br>
 `default interval is 1`, 
@@ -240,8 +221,7 @@ printf("hello world", "hii, I am coder", interval=2)
 ```
 
 
-<!-- ### stay -->
-### <text style="color:rgb(237, 127, 43)">Stay</a>
+### stay
 stay decides after style animation whether you want the `values on stream OR Not`.
 stay can be True or False, `(default stay = True)`.
 if you want to remove printed line. you can set `stay=False`. 
@@ -265,20 +245,19 @@ printf("hello world",
     )
 ```  
 
-<!-- ### getmat -->
-### <text style="color:rgb(237, 127, 43)">getmat</a>
-
+### getmat
 matrix data modifier works with `numpy, pytorch, tensorflo, pandas, list`, Default = False <br>
 can set as `True, "true", "show"`. getmat parameter directly passing to the listfunction 
 
 more about getmat on <a href=#listfunction style="text-decoration:none">listfunction</a>
 
+
 ---
 
 <br>
 
-# dvs_printf.init Method
 
+# dvs_printf.init Method
 
 A dynamic initializer for printf that allows users to preset parameters for consistent usage.  
 Priority order for settings parameters: printf's keywords > Setter Variables > dvs_printf.init's keywords > Defaults. <br>
