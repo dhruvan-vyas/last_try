@@ -15,7 +15,7 @@ is given Then the output animation work with each items.
 
 __all__=("init", "printf", "listfunction", "showLoding") 
 __version__='1.3'
-__author__ ='Vyas Dhruvan'
+__author__='Vyas Dhruvan'
 
 from .__printf__ import printf, listfunction
 from .__init import init
