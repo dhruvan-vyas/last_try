@@ -19,7 +19,7 @@ __author__='Vyas Dhruvan'
 
 from .__printf__ import printf, listfunction
 from .__init import init
-from .__Loding import showLoding
+from .__Loding__ import showLoding
 
 
 
