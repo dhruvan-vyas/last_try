@@ -8,19 +8,16 @@
 ![Python Versions](https://img.shields.io/badge/python-3.10%20%7C%203.11%20%7C%203.12-blue)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/dhruvan-vyas/dvs_printf/blob/main/LICENSE)
 [![PEP8](https://img.shields.io/badge/PEP8-compliant-brightgreen.svg)](https://www.python.org/dev/peps/pep-0008/) 
+</div> 
 
 <img src="https://github.com/dhruvan-vyas/dvs_printf/blob/main/card.png?raw=true">
 
-</div> 
-
-
 enhance way to handle console output for Python projects. 
-The module offers `printf` style animation functions that designed to enhance the visual appearance of terminal-based Python projects,
+The module offers `printf` style animation functions that designed to enhance the 
+visual appearance of terminal-based Python projects,
 Key features include different animation styles, customizable speeds, and flexible formatting options. 
 
 dvs_printf module include 3 main function and 1 sub function
-<!-- <a href="#printf-function" style="text-decoration:none">printf</a> -->
-
 * *[printf](#printf-function)* (core of the module)
 * *[init](#dvs_printfinit-method)* (dynamic initializer for `printf`)
 * *[showLoding](#showloding-function)* (creates loding bar)
