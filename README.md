@@ -85,7 +85,10 @@ git clone https://github.com/dhruvan-vyas/test_dvs_printf.git
 
 <br>
 
-# printf function 
+<!-- # printf function  -->
+# <text style="color:rgb(237, 127, 43);"> printf function</a> 
+<!-- # <text style="color:rgb(79, 189, 201);"> printf function</a>  -->
+
 
 The printf function allow users to apply various animation styles to their values. 
 Supports different data types ***(string, int, float, list, set, tuple, dict)*** and 
@@ -99,7 +102,9 @@ from dvs_printf import printf
 printf(values, style='typing', speed=3, interval=2, stay=True, getmat=False) # defaults
 ```
 
-### values
+<!-- ### values -->
+### <text style="color:rgb(157, 213, 251)">Values</a>
+
 values stream can be anything like
 `(string, int, float, list, set, tuple, dict)`
 and you can give multiple input as any-data-type.
@@ -156,7 +161,10 @@ printf(values, style="center")
 | | f2b      | typing and remove letter from back to front  |
 | | b2f      | typing and remove letter from front to back  |
 
-#### ****async Style**** 
+<!-- #### ****async Style****  -->
+
+### <text style="color:rgb(157, 213, 251)">async Style</a>
+
 Introducing a novel printing style—async. This style revolutionizes the way multiple lines are printed simultaneously, 
 optimizing display in both spacious and constrained terminals.
 
@@ -229,7 +237,8 @@ printf("hello world", "hii, I am coder", interval=2)
 ```
 
 
-### stay
+<!-- ### stay -->
+### <text style="color:rgb(157, 213, 251)">Stay</a>
 stay decides after style animation whether you want the `values on stream OR Not`.
 stay can be True or False, `(default stay = True)`.
 if you want to remove printed line. you can set `stay=False`. 
@@ -253,7 +262,9 @@ printf("hello world",
     )
 ```  
 
-### getmat
+<!-- ### getmat -->
+### <text style="color:rgb(157, 213, 251)">getmat</a>
+
 matrix data modifier works with `numpy, pytorch, tensorflo, pandas, list`, Default = False <br>
 can set as `True, "true", "show"`. getmat parameter directly passing to the listfunction 
 
@@ -309,22 +320,25 @@ the `init` function has the `same keyword and defaults` `as printf.`
 
 as shown in this code-snippet we have `the dynamic init method`, 
 we can `preset all parameters` and can be `change at any point` according to your needs. <br>
-`keywords inside printf` function has the most priority,
-then `Setter Variables Ex. set_speed` has the second priority, and `keywords inside init` method has the third priority and
-if NOT Any parameters Are give, it `works on default parameters` at Last priority.
-
 
 **priority of parameters**
 
-<div align="center">
+<div align="center" style="color:rgb(175, 145, 223)">
 
 **printf's keywords** 
 *>* **setter Veriables** 
 *>* **init's keywords** 
 *>* **the defaults**
 </div>
+
+`keywords inside printf` function has the most priority,
+then `Setter Variables Ex. set_speed` has the second priority, and `keywords inside init` method has the third priority and
+if NOT Any parameters Are give, it `works on default parameters` at Last priority.
+
+
       
 ---
+
 <br>
 
 # showLoding Function
