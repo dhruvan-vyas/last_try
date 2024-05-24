@@ -170,9 +170,14 @@ printf(
     style="async 2",   # for sets of 2 lines from given. Ex:[1-2, 3-4, 5]
 ) 
 ```    
-Please note that the terms "async" in this context do not relate to the async-IO functions in Python, 
-but rather follow a Async-style naming convention specific to the dvs_printf module.
+```
+Note:
 
+|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|
+|  Please note that the terms "async" in this context do not relate to the async-IO functions       |
+|  in Python, but rather follow a Async-style naming convention specific to the dvs_printf module.  |
+|___________________________________________________________________________________________________|
+```
 
 ### Speed
 Speed defins printf's animation speed, `default speed is 3` you can set `speed from ( 1 to 6 or 7)`
