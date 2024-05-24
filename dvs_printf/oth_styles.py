@@ -1,6 +1,5 @@
 from time import sleep
 from os import get_terminal_size
-# |-------|----------|----------------------------------------------|
 
 def _help():
     tem_len_line = get_terminal_size()[0]
