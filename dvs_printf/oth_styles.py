@@ -1,64 +1,63 @@
 from time import sleep
 from os import get_terminal_size
+# |-------|----------|----------------------------------------------|
 
 def _help():
     tem_len_line = get_terminal_size()[0]
     mid_len_line = int(tem_len_line/2 - 9)
     print("\n"+"="*tem_len_line+"\n"+(" "*mid_len_line)+">>> DVS_PRINTF <<<"+"\n"+"="*tem_len_line)
-    for x in """\n
+    print("""
 keywords --> printf(values, style='typing', speed=3, interval=2, stay=True)\n\n
 values --> main stream input values  
-        value can be any-data-Type 
-        Ex. printf(str, list, [tuple, set], dict, int,...)\n\n
+           value can be any-data-Type 
+           Ex. printf(str, list, [tuple, set], dict, int,...)\n\n
 style --> style is different type if printing animation 
-        styles, from this list each style type works 
-        differently according to description below\n
+          styles, from this list each style type works 
+          differently according to description below\n
         ["typing", "async", "headline", "newsline", "mid", "gunshort", "snip",
         "left", "right", "center", "centerAC", "centerAL", "centerAR", "wave",
         "matrix", "matrix2", "scatter", "fire", "blink", "f2b", "b2f", "help"]\n
-
-        |----------|----------------------------------------------|
-        |  option  |                 description                  |
-        |__________|______________________________________________|
-        | typing   | print like typing animation                  |
-      * | async    | print multiple lines simultaneously          |
-        | headline | print like head lines in news                |
-        | newsline | print running newslines animation            |
-        | mid      | print line from mid                          |
-        | left     | value coming from left side of the terminal  |
-        | right    | value coming from right side of the terminal |
-        | center   | animation appear at center of the terminal   |
-        | centerAC | values arrang at center of the terminal      |
-        | centerAL | arrang each-item at center-Left on terminal  |
-        | centerAR | arrang each-item at center-Right on terminal |
-        | gunshort | firing the letters from short gun            |
-        | snip     | sniping the letters from end of the terminal |
-        | matrix   | print random letters to real line            |
-        | matrix2  | print 1st letter and 2nd random letters      |
-        | Scatter  | Scattered latters effect for each line       |
-        | Fire     | appear latters with gap creates flame effect | 
-        | wave     | creates wave effect with each line.          | 
-        | Blink    | appear Blink effect from start to end.       |
-        | f2b      | typing and remove letter from back to front  |
-        | b2f      | typing and remove letter from front to back  |
-        ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯ \n\n
-speed -->  speed of printf's animation 
-        defult speed is 3, from (1 to 6)\n
-        1 = Very Slow  
-        2 = Slow  
-        3 = Mediam
-        4 = Fast
-        5 = Fast+
-        6 = Very Fast\n\n
+        |¯¯¯|¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|
+        |   |  option  |                 description                  |
+        |___|__________|______________________________________________|
+        | * | typing   | print like typing animation                  |
+        | * | async    | print multiple lines simultaneously          |
+        |   | headline | print like head lines in news                |
+        |   | newsline | print running newslines animation            |
+        |   | mid      | print line from mid                          |
+        | * | left     | value coming from left side of the terminal  |
+        | * | right    | value coming from right side of the terminal |
+        | * | center   | animation appear at center of the terminal   |
+        | * | centerAC | values arrang at center of the terminal      |
+        | * | centerAL | arrang each-item at center-Left on terminal  |
+        | * | centerAR | arrang each-item at center-Right on terminal |
+        |   | gunshort | firing the letters from short gun            |
+        |   | snip     | sniping the letters from end of the terminal |
+        |   | matrix   | print random letters to real line            |
+        |   | matrix2  | print 1st letter and 2nd random letters      |
+        |   | Scatter  | Scattered latters effect for each line       |
+        |   | Fire     | appear latters with gap creates flame effect | 
+        |   | wave     | creates wave effect with each line.          | 
+        |   | Blink    | appear Blink effect from start to end.       |
+        |   | f2b      | typing and remove letter from back to front  |
+        |   | b2f      | typing and remove letter from front to back  |
+        ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯ \n\n
+speed --> speed of printf's animation 
+          defult speed is 3, from (1 to 6)\n
+          1 = Very Slow  
+          2 = Slow  
+          3 = Mediam
+          4 = Fast
+          5 = Fast+
+          6 = Very Fast\n\n
 interval --> interval is waiting time between printing 
-            of each values, (interval in second) 
-            defult interval is 2, you can set from 0 to grater\n\n    
+             of each values, (interval in second) 
+             defult interval is 2, you can set from 0 to grater\n\n    
 stay --> after style animation whether you want the values OR Not
-        defult stay is True, can be `True or False`\n
-        but some styles take No action on stay
-        whether it is True OR False 
-        Ex. ( typing, async, headline, newsline, f2b,  b2f, matrix2 )\n""":
-        print(x, end="",flush=True);sleep(.002)
+         defult stay is True, can be `True or False`\n
+         but some styles take No action on stay
+         whether it is True OR False 
+         Ex. ( typing, async, headline, newsline, f2b,  b2f, matrix2 )\n\n""")
     print("="*tem_len_line+"\n")
 
 def fuzzy_check(str1):
