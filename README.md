@@ -152,7 +152,7 @@ optimizing display in both spacious and constrained terminals.
 
 *How to Use:*
 -   To introduce a delay before printing a set of lines from given values, Use the style="async <num_lines>".  
-    OR Use style="async" for  each line in given values to be printed simultaneously, acording to aveleble space.
+    OR Use style="async" for  each line in given values to be printed simultaneously, acording to aveleble space.   
     if there is no enough space in terminal for given values, then it's prints set of values that fit in terminal 
   
 *Example:*
