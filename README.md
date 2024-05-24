@@ -173,10 +173,8 @@ printf(
 ```
 Note:
 
-|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|
-|  Please note that the terms "async" in this context do not relate to the async-IO functions       |
-|  in Python, but rather follow a Async-style naming convention specific to the dvs_printf module.  |
-|___________________________________________________________________________________________________|
+Please note that the terms "async" in this context do not relate to the async-IO functions       
+in Python, but rather follow a Async-style naming convention specific to the dvs_printf module.  
 ```
 
 ### Speed
