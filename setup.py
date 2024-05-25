@@ -2,7 +2,7 @@
 import setuptools
 setuptools.setup(
     name="dvs_printf",
-    version="1.2",
+    version="1.3",
     python_requires=">=3.10",
     packages=setuptools.find_packages()
 )
