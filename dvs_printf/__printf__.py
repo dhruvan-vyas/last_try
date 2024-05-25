@@ -4,7 +4,6 @@ from os import get_terminal_size
 
 def divide_string(string="", tem_len:int|None=None) -> list[str]:  
     list_=[]
-    tem_len=get_terminal_size()[0]-2
     if len(string) >= tem_len:
         for i in range(1,10):
             if string[:tem_len][-i]==" ":i-=1;break

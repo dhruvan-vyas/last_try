@@ -98,19 +98,13 @@ printf(any, str, list, [tuple, set], dict, int, float,...)
 
 https://github.com/dhruvan-vyas/dvs_printf/assets/98950841/98616314-fcbf-4ea0-9748-6b60bd2cc3b7
 
-
 style defins different types of console output animation.<br>
 each style type works differently according to the description below
-
-
-
 ``` python
 style: ["typing", "async", "headline", "newsline", "mid", "gunshort", "snip", 
     "left", "right", "center", "centerAC", "centerAL", "centerAR", "Fire", 
     "wave", "Blink", "Scatter", "matrix", "matrix2", "f2b", "b2f", "help"]
 ``` 
-
-
 ``` python
 printf(values, style="center")
 ``` 
@@ -166,8 +160,8 @@ printf(
 printf(
     "This is line 1\nThis is line 2\nThis is line 3", 
     "This is line 4\nThis is line 5", 
-    interval=2
-    style="async 2",   # for sets of 2 lines from given. Ex:[1-2, 3-4, 5]
+    interval=1
+    style="async 2",   # for print sets of 2 lines from given. Ex:[1-2, 3-4, 5]
 ) 
 ```    
 
@@ -183,7 +177,7 @@ https://github.com/dhruvan-vyas/dvs_printf/assets/98950841/9e4ef430-b376-4f8a-b2
 
 * 1 = *Very Slow*
 * 2 = *Slow*
-* 3 = *Mediam* (*default)
+* 3 = *Mediam* 
 * 4 = *Mediam Fast*
 * 5 = *Fast*
 * 6 = *Very Fast*
@@ -302,7 +296,6 @@ we can `preset all parameters` and can be `change at any point` according to you
 `keywords inside printf` function has the most priority,
 then `Setter Variables Ex. set_speed` has the second priority, and `keywords inside init` method has the third priority and
 if NOT Any parameters Are give, it `works on default parameters` at Last priority.
-
 
       
 ---
