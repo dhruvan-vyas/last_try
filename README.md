@@ -470,3 +470,28 @@ The Module automatically check the size of the window and adjust what it shows a
 Some Visual elements like Long Line should shrink depending on how much space is available.
 
 
+
+
+---
+---
+
+**dvs_printf v1.3 Release Notes**
+
+I am excited to announce the release of `dvs_printf v1.3` This update brings several new features, bug fixes, and improvements to enhance the functionality and performance of the library.
+
+**New Features**
+* **Async Style:** Introduced a new animation style named "Async" that allows multiple lines to animate simultaneously, providing a more dynamic and visually appealing output. This feature also supports the syntax `"async <int>"`, enabling you to control and animate sets for a specific number of lines based on the given value. This allows for greater flexibility and customization of animations.
+
+**Bug Fixes**
+* **Line Wrapping:** Fixed issues with lines that exceed the terminal width. Previously, lines larger than the terminal width did not animate well. Now, such lines are split and moved to a new line for better handling and display.
+
+**Improvements**
+* **Stability Enhancements:** Improved overall stability of the library to prevent crashes and unexpected behavior during usage.
+* **Code Optimization:** Optimized the codebase for better performance and efficiency, reducing execution time and resource usage.
+However, please note that for console-based animation, it still requires some computation power and may take some time to process.
+
+**Additional Features**
+* **Style Naming Error Detection:** Added a new feature that detects and alerts users to naming errors in styles, helping to prevent mistakes and improve the development experience.
+* **Handling Invalid Values:** Implemented functionality to handle cases where given values and keywords are not as expected. The system now works on suitable default values to ensure smooth operation even when input errors occur.
+
+I hope you enjoy the new features and improvements in this release. As always, I appreciate your feedback and contributions to make dvs_printf even better.
