@@ -3,8 +3,6 @@
 <div align="center">
 <h3>Simple & Dynamic console animation styles for python</h3>
     
-0.1.3
-
 
 [![PyPI Version](https://badge.fury.io/py/dvs-printf.svg)](https://badge.fury.io/py/dvs-printf)
 [![Build Status](https://github.com/dhruvan-vyas/dvs_printf/actions/workflows/module_test.yml/badge.svg)](https://github.com/dhruvan-vyas/dvs_printf/actions) 
