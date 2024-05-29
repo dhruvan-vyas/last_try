@@ -15,7 +15,11 @@
 <img src="https://github.com/dhruvan-vyas/dvs_printf/blob/main/card.png?raw=true">
 
 
+<<<<<<< HEAD
 [![PyPI Version](https://badge.fury.io/py/dvs-printf.svg?cachebuster=1)](https://badge.fury.io/py/dvs-printf)
+=======
+![PyPI Version](https://badge.fury.io/py/dvs-printf.svg)
+>>>>>>> 25e20ba935baebcb9e6ef2073e3e1cb91616fcf2
 
 enhance way to handle console output for Python projects. 
 The module offers `printf` style animation functions that designed to enhance the 
