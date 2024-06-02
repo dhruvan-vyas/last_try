@@ -4,7 +4,7 @@
 <h3>Simple & Dynamic console animation styles for python</h3>
     
 
-[![PyPI Version](https://badge.fury.io/py/test_dvs-printf.svg)](https://badge.fury.io/py/dvs-printf)
+[![PyPI Version](https://badge.fury.io/py/test_dvs-printf.svg?cachebuster=1)](https://badge.fury.io/py/dvs-printf)
 [![Build Status](https://github.com/dhruvan-vyas/dvs_printf/actions/workflows/module_test.yml/badge.svg)](https://github.com/dhruvan-vyas/dvs_printf/actions) 
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/dhruvan-vyas/test)<br>
 ![Python Versions](https://img.shields.io/badge/python-3.10%20%7C%203.11%20%7C%203.12-blue)
@@ -18,7 +18,7 @@
 [![PyPI Version](https://badge.fury.io/py/dvs-printf.svg?cachebuster=1)](https://badge.fury.io/py/dvs-printf)
 xs
 ![PyPI Version](https://badge.fury.io/py/dvs-printf.svg)
-![PyPI Version](https://badge.fury.io/py/dvs-printf.svg)
+![PyPI Version](https://badge.fury.io/py/dvs-printf.svg?cachebuster=1)
 ![PyPI Version](https://badge.fury.io/py/dvs-printf.svg)
 ![PyPI Version](https://badge.fury.io/py/dvs-printf.svg)
 
