@@ -14,7 +14,7 @@
 
 <img src="https://github.com/dhruvan-vyas/dvs_printf/blob/main/card.png?raw=true">
 
-[![PyPI version](https://badge.fury.io/py/test-dvs-printf.png)](https://badge.fury.io/py/test-dvs-printf)
+[![Build Status](https://github.com/dhruvan-vyas/dvs_printf/actions/workflows/module_test.yml/badge.svg)](https://github.com/dhruvan-vyas/dvs_printf/actions) 
 
 ![PyPI Version](https://img.shields.io/pypi/v/test-dvs-printf.svg?achebuster=1)
 
