@@ -14,6 +14,8 @@
 
 <img src="https://github.com/dhruvan-vyas/dvs_printf/blob/main/card.png?raw=true">
 
+![PyPI Version](https://img.shields.io/pypi/v/test-dvs-printf.svg?achebuster=1)
+
 
 [![PyPI Version](https://badge.fury.io/py/dvs-printf.svg?cachebuster=1)](https://badge.fury.io/py/dvs-printf)
 xs
