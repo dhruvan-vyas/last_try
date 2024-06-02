@@ -16,7 +16,7 @@
 
 [![Build Status](https://github.com/dhruvan-vyas/dvs_printf/actions/workflows/module_test.yml/badge.svg)](https://github.com/dhruvan-vyas/dvs_printf/actions) 
 
-![PyPI Version](https://img.shields.io/pypi/v/test-dvs-printf.svg?achebuster=1)
+![PyPI Version](https://img.shields.io/pypi/v/test-dvs-printf.svg?achebuster=1 )
 
 
 [![PyPI Version](https://badge.fury.io/py/dvs-printf.svg?cachebuster=1)](https://badge.fury.io/py/dvs-printf)
