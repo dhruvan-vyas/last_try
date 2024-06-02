@@ -17,10 +17,11 @@
 
 [![PyPI Version](https://badge.fury.io/py/dvs-printf.svg?cachebuster=1)](https://badge.fury.io/py/dvs-printf)
 xs
-![PyPI Version](https://badge.fury.io/py/dvs-printf.svg)
+
+![PyPI Version](https://badge.fury.io/py/test_dvs-printf.svg?cachebuster=1) to change <br>
 ![PyPI Version](https://badge.fury.io/py/dvs-printf.svg?cachebuster=1)
-![PyPI Version](https://badge.fury.io/py/dvs-printf.svg)
-![PyPI Version](https://badge.fury.io/py/dvs-printf.svg)
+
+![PyPI Version](https://badge.fury.io/py/test_dvs-printf.svg)
 
 
 enhance way to handle console output for Python projects. 
