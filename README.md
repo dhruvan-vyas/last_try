@@ -22,7 +22,7 @@
 [![PyPI Version](https://badge.fury.io/py/dvs-printf.svg?cachebuster=1)](https://badge.fury.io/py/dvs-printf)
 xs
 
-![PyPI Version](https://badge.fury.io/py/test_dvs-printf.svg?cachebuster=1) to change <br>
+![PyPI Version](https://badge.fury.io/py/test_dvs-printf.svg?cachebuster=0) to change <br>
 ![PyPI Version](https://badge.fury.io/py/dvs-printf.svg?cachebuster=1)
 
 ![PyPI Version](https://badge.fury.io/py/test_dvs-printf.svg)
