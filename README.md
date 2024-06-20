@@ -3,10 +3,8 @@
 <div align="center">
 <h3>Simple & Dynamic console animation styles for python</h3>
     
-0.1.3
 
-
-[![PyPI Version](https://badge.fury.io/py/dvs-printf.svg)](https://badge.fury.io/py/dvs-printf)
+[![PyPI Version](https://badge.fury.io/py/test_dvs-printf.svg?cachebuster=0)](https://badge.fury.io/py/dvs-printf)
 [![Build Status](https://github.com/dhruvan-vyas/dvs_printf/actions/workflows/module_test.yml/badge.svg)](https://github.com/dhruvan-vyas/dvs_printf/actions) 
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/dhruvan-vyas/test)<br>
 ![Python Versions](https://img.shields.io/badge/python-3.10%20%7C%203.11%20%7C%203.12-blue)
@@ -15,6 +13,19 @@
 </div> 
 
 <img src="https://github.com/dhruvan-vyas/dvs_printf/blob/main/card.png?raw=true">
+
+[![Build Status](https://github.com/dhruvan-vyas/dvs_printf/actions/workflows/module_test.yml/badge.svg)](https://github.com/dhruvan-vyas/dvs_printf/actions) 
+
+![PyPI Version](https://img.shields.io/pypi/v/test-dvs-printf.svg?achebuster=1 )
+
+
+[![PyPI Version](https://badge.fury.io/py/dvs-printf.svg?cachebuster=1)](https://badge.fury.io/py/dvs-printf)
+
+
+![PyPI Version](https://badge.fury.io/py/test_dvs-printf.svg?cachebuster=0) to change <br>
+![PyPI Version](https://badge.fury.io/py/dvs-printf.svg?cachebuster=1)
+
+
 
 enhance way to handle console output for Python projects. 
 The module offers `printf` style animation functions that designed to enhance the 
