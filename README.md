@@ -32,6 +32,8 @@ The module offers `printf` style animation functions that designed to enhance th
 visual appearance of terminal-based Python projects,
 Key features include different animation styles, customizable speeds, and flexible formatting options. 
 
+[![Known Vulnerabilities](https://snyk.io/test/github/dhruvan-vyas/dvs_printf/badge.svg)](https://snyk.io/test/github/dhruvan-vyas/dvs_printf)
+ 
 dvs_printf module include 3 main function and 1 sub function
 * *[printf](#printf-function)* (core of the module)
 * *[init](#dvs_printfinit-method)* (dynamic initializer for `printf`)
