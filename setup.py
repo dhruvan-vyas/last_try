@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='dvs_printf',
-    version='1.0',
+    version='2.1',
     description=
 "Animated Visual appearance for console-based applications, with different animation styles",
     long_description=open('README.md').read(),
