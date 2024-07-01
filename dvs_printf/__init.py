@@ -1,8 +1,12 @@
 from .__printf__ import printf as pf
 
 class init:
-    def __init__(self,style:str='typing',speed:int|float=3, 
-    interval:int|float=1,stay:bool=True,getmat:bool|str=False):
+    def __init__(self,
+        style: str = 'typing',
+        speed: int | float = 3, 
+        interval: int | float = 1,
+        stay: bool = True,
+        getmat: bool | str = False): 
         """
 [dvs_printf Initializer](https://github.com/dhruvan-vyas/dvs_printf?tab=readme-ov-file#dvs_printfinit-method): allows to preset parameters for printf
 

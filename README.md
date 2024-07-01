@@ -3,42 +3,26 @@
 <div align="center">
 <h3>Simple & Dynamic console animation styles for python</h3>
     
-
-[![PyPI Version](https://badge.fury.io/py/test_dvs-printf.svg?cachebuster=0)](https://badge.fury.io/py/dvs-printf)
-[![Build Status](https://github.com/dhruvan-vyas/dvs_printf/actions/workflows/module_test.yml/badge.svg)](https://github.com/dhruvan-vyas/dvs_printf/actions) 
+[![PyPI Version](https://badge.fury.io/py/dvs-printf.svg)](https://badge.fury.io/py/dvs-printf)
+[![Build Status](https://github.com/dhruvan-vyas/dvs_printf/actions/workflows/module_test.yml/badge.svg)](https://github.com/dhruvan-vyas/dvs_printf/actions)
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/dhruvan-vyas/test)<br>
 ![Python Versions](https://img.shields.io/badge/python-3.10%20%7C%203.11%20%7C%203.12-blue)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/dhruvan-vyas/dvs_printf/blob/main/LICENSE)
 [![PEP8](https://img.shields.io/badge/PEP8-compliant-brightgreen.svg)](https://www.python.org/dev/peps/pep-0008/) 
 </div> 
 
-<img src="https://github.com/dhruvan-vyas/dvs_printf/blob/main/card.png?raw=true">
-
-[![Build Status](https://github.com/dhruvan-vyas/dvs_printf/actions/workflows/module_test.yml/badge.svg)](https://github.com/dhruvan-vyas/dvs_printf/actions) 
-
-![PyPI Version](https://img.shields.io/pypi/v/test-dvs-printf.svg?achebuster=1 )
-
-
-[![PyPI Version](https://badge.fury.io/py/dvs-printf.svg?cachebuster=1)](https://badge.fury.io/py/dvs-printf)
-
-
-![PyPI Version](https://badge.fury.io/py/test_dvs-printf.svg?cachebuster=0) to change <br>
-![PyPI Version](https://badge.fury.io/py/dvs-printf.svg?cachebuster=1)
-
-
+<img src="card.png">
 
 enhance way to handle console output for Python projects. 
 The module offers `printf` style animation functions that designed to enhance the 
 visual appearance of terminal-based Python projects,
 Key features include different animation styles, customizable speeds, and flexible formatting options. 
 
-[![Known Vulnerabilities](https://snyk.io/test/github/dhruvan-vyas/dvs_printf/badge.svg)](https://snyk.io/test/github/dhruvan-vyas/dvs_printf)
- 
 dvs_printf module include 3 main function and 1 sub function
 * *[printf](#printf-function)* (core of the module)
 * *[init](#dvs_printfinit-method)* (dynamic initializer for `printf`)
 * *[showLoding](#showloding-function)* (creates loding bar)
-* *[listfunction](#listfunction)* (Supplementary function)
+* *[list_of_str](#any-to-list)* (Supplementary function)
 
 
 Use Cases:
@@ -92,12 +76,12 @@ The printf function allow users to apply various animation styles to their value
 Supports different data types ***(string, int, float, list, set, tuple, dict)*** and 
 classes ***(numpy, tensorflow, pytorch, pandas)*** as input. 
 Users can choose from a range of animation styles, including typing, headlines, Center,Left,right and more. 
-Customizable parameters include style, speed, interval, getmat, stay. 
+Customizable parameters include style, speed, delay, getmat, stay. 
 
 ```python
 from dvs_printf import printf
 
-printf(values, style='typing', speed=3, interval=2, stay=True, getmat=False) # defaults
+printf(values, style='typing', speed=3, delay=0, stay=True, getmat=False) # defaults
 ```
 
 ### values
@@ -113,7 +97,7 @@ printf(any, str, list, [tuple, set], dict, int, float,...)
 
 ### style
 
-https://github.com/dhruvan-vyas/dvs_printf/assets/98950841/98616314-fcbf-4ea0-9748-6b60bd2cc3b7
+Exemple Video==>
 
 style defins different types of console output animation.<br>
 each style type works differently according to the description below
@@ -152,8 +136,11 @@ printf(values, style="center")
 
 #### ****async Style**** 
 
-Introducing a novel printing style—async. This style revolutionizes the way multiple lines are printed simultaneously, 
+Introducing a novel printing 'style—async'. This style revolutionizes the way multiple lines are printed simultaneously, 
 optimizing display in both spacious and constrained terminals.
+
+Exemple Video==>
+
 
 *Key Features:*
 - *`Simultaneous Printing:`* Print multiple lines simultaneously when there's ample space in the terminal.
@@ -163,8 +150,8 @@ optimizing display in both spacious and constrained terminals.
 
 *How to Use:*
 -   To introduce a delay before printing a set of lines from given values, Use the style="async <num_lines>".  
-    OR Use style="async" for  each line in given values to be printed simultaneously, acording to aveleble space.   
-    if there is no enough space in terminal for given values, then it's prints set of values that fit in terminal 
+    OR Use style="async" for  each line in given values to be printed simultaneously, according to available space.   
+    if there is no enough space in terminal for given values, then it's prints sets of values that fit in terminal 
   
 *Example:*
 ```python
@@ -177,20 +164,20 @@ printf(
 printf(
     "This is line 1\nThis is line 2\nThis is line 3", 
     "This is line 4\nThis is line 5", 
-    interval=1
-    style="async 2",   # for print sets of 2 lines from given. Ex:[1-2, 3-4, 5]
+    delay=0
+    style="async 2",   # for print sets of "2" lines from given. Ex:[1-2, 3-4, 5]
 ) 
 ```    
 
-Please note that the terms "async" in this context do not relate to the async-IO functions 
-in Python, but rather follow a Async-style naming convention specific to the dvs_printf module.  
+Please note that the terms "async" in this context do not relate to the async-IO functions in   
+Python, but rather follow a Async-style naming convention specific to the dvs_printf module.  
 
 
 ### Speed
 Speed defins printf's animation speed, `default speed is 3` you can set `speed from ( 1 to 6 or 7)`
 each style's speed is littel difrent 
 
-https://github.com/dhruvan-vyas/dvs_printf/assets/98950841/9e4ef430-b376-4f8a-b24f-f6b580d2c5c9
+Exemple Video==>
 
 * 1 = *Very Slow*
 * 2 = *Slow*
@@ -205,18 +192,18 @@ printf("hello world", speed=2)
 ```
 
 
-### interval
-interval is waiting time between printing 
-of two lines (interval in second) <br>
-`default interval is 1`, 
-you can set interval from `0 to 5 or greater` 
+### delay
+delay is waiting time between printing 
+of two lines (delay in second) <br>
+`default delay time is 0`, 
+you can set delay from `0 to greater` 
 
 ``` python
-printf("hello world", "hii, I am coder", interval=2)
+printf("hello world", "hii, I am coder", delay=2)
 
 # (with animation)
 >>> hello world  
->>> # (wating time of interval time in second)
+>>> # (wating time of delay time in second)
 >>> hii, I am coder  
 ```
 
@@ -225,7 +212,7 @@ printf("hello world", "hii, I am coder", interval=2)
 stay decides after style animation whether you want the `values on stream OR Not`.
 stay can be True or False, `(default stay = True)`.
 if you want to remove printed line. you can set `stay=False`. 
-So, After style amimetion and interval time printed Line can be removes.<br>
+So, After style amimetion and delay time printed Line can be removes.<br>
 
 but some of the style `take No action on stay`,<br>
 whether it is `True OR False`. it works as it should be.<br>
@@ -235,7 +222,7 @@ Ex. `(typing, async, headline, newsline, f2b, b2f, matrix, matrix2)`
 printf("hello world", 
     style="left", 
     stay=False,  #------> it's remove printed line after 1.5 seconds
-    interval=1.5 #---------------------------------------^^^
+    delay=1.5 #---------------------------------------^^^
     )
 ``` 
 ``` python 
@@ -247,9 +234,9 @@ printf("hello world",
 
 ### getmat
 matrix data modifier works with `numpy, pytorch, tensorflo, pandas, list`, Default = False <br>
-can set as `True, "true", "show"`. getmat parameter directly passing to the listfunction 
+can set as `True, "true", "show"`. getmat parameter directly passing to the list_of_str.
 
-more about getmat on <a href=#listfunction style="text-decoration:none">listfunction</a>
+more about getmat on <a href=#list-of-str style="text-decoration:none;">list_of_str</a> function.
 
 
 ---
@@ -277,7 +264,7 @@ printf = pf.printf
 # perametars
 pf.set_style = "centerAL"
 pf.set_speed = 4
-pf.set_interval = 0
+pf.set_list_of_str = 0
 pf.set_stay = False
 
 printf("hello world", "walcome to my project") 
@@ -307,7 +294,7 @@ we can `preset all parameters` and can be `change at any point` according to you
 
 <div align="center" style="color:rgb(175, 145, 223)">
 
-**printf's keywords** *>* **setter Veriables** *>* **init's keywords** *>* **the defaults**
+**printf's keywords** *>* **setter Veriables** *>* **dvs_printf.init's keywords** *>* **the defaults**
 </div>
 
 `keywords inside printf` function has the most priority,
@@ -407,11 +394,11 @@ downloading files[------------------           ] %60
 ---
 <br>
 
-# listfunction 
-An additionl function which is used by printf function, creates -> list[str] with input values 
+# list_of_str Function
+An additionl function which is used by printf function, creates -> list[str] with input values. 
 
 ```python
-listfunction( *values: any, getmet: bool | str | None = False,) -> list[str]
+list_of_str(*values: any, getmet: bool | str | None = False ) -> list[str]
 ```
 
 
@@ -449,7 +436,7 @@ tf_array = tf.Variable([   # Example Variable (tf_array)
 ], dtype=tf.float32)
 
 
-listfunction(tf_array, getmat=False)  # The default
+list_of_str(tf_array, getmat=False)  # The default
 # output_list: 
 [
     "<tf.Variable 'Variable:0' shape=(1, 3, 3) dtype=float32, numpy=",
@@ -459,7 +446,7 @@ listfunction(tf_array, getmat=False)  # The default
 ]
 
 
-listfunction(tf_array, getmat=True)   # True or "true"
+list_of_str(tf_array, getmat=True)   # True or "true"
 # output_list: 
 [
     '[1.0, 1.0, 1.0]', 
@@ -468,7 +455,7 @@ listfunction(tf_array, getmat=True)   # True or "true"
 ] 
 
  
-listfunction(tf_array, getmat="show")   # "show"
+list_of_str(tf_array, getmat="show")   # "show"
 # output_list: 
 [
     '[1, 1, 1]', 
@@ -483,28 +470,3 @@ The Module automatically check the size of the window and adjust what it shows a
 Some Visual elements like Long Line should shrink depending on how much space is available.
 
 
-
-
----
----
-
-**dvs_printf v1.3 Release Notes**
-
-I am excited to announce the release of `dvs_printf v1.3` This update brings several new features, bug fixes, and improvements to enhance the functionality and performance of the library.
-
-**New Features**
-* **Async Style:** Introduced a new animation style named "Async" that allows multiple lines to animate simultaneously, providing a more dynamic and visually appealing output. This feature also supports the syntax `"async <int>"`, enabling you to control and animate sets for a specific number of lines based on the given value. This allows for greater flexibility and customization of animations.
-
-**Bug Fixes**
-* **Line Wrapping:** Fixed issues with lines that exceed the terminal width. Previously, lines larger than the terminal width did not animate well. Now, such lines are split and moved to a new line for better handling and display.
-
-**Improvements**
-* **Stability Enhancements:** Improved overall stability of the library to prevent crashes and unexpected behavior during usage.
-* **Code Optimization:** Optimized the codebase for better performance and efficiency, reducing execution time and resource usage.
-However, please note that for console-based animation, it still requires some computation power and may take some time to process.
-
-**Additional Features**
-* **Style Naming Error Detection:** Added a new feature that detects and alerts users to naming errors in styles, helping to prevent mistakes and improve the development experience.
-* **Handling Invalid Values:** Implemented functionality to handle cases where given values and keywords are not as expected. The system now works on suitable default values to ensure smooth operation even when input errors occur.
-
-I hope you enjoy the new features and improvements in this release. As always, I appreciate your feedback and contributions to make dvs_printf even better.

@@ -1,8 +1,5 @@
 # Contributing to dvs_printf
 
-[![dvs-printf](/advisor/python/dvs-printf/badge.svg)](/advisor/python/dvs-printf)
-
-
 First off, thank you for considering contributing to dvs_printf! It's people like you that make this project great.
 
 ## How to Contribute
@@ -64,7 +61,8 @@ Please adhere to the coding standards used throughout the project. This helps en
 ### Testing
 
 Before submitting your changes, ensure that all tests pass. You can run tests locally using the following command:
-```bash
+
+```
 # Example command to run tests
 pytest
 
@@ -79,3 +77,4 @@ If you have any questions or need further clarification, feel free to reach out 
 
 Thank You
 Thank you for your interest in contributing to dvs_printf! Your efforts and contributions are greatly appreciated.
+```
