@@ -162,10 +162,10 @@ printf(
 ```
 ```python
 printf(
-    "This is line 1\nThis is line 2\nThis is line 3", 
+    "This is line 1\nThis is line 2\nThis is line 3", ⎢⎢⎢⎢
     "This is line 4\nThis is line 5", 
     delay=0
-    style="async 2",   # for print sets of "2" lines from given. Ex:[1-2, 3-4, 5]
+    style="async 2",   # to print sets of "2" lines from given. Ex:[1-2, 3-4, 5]
 ) 
 ```    
 
