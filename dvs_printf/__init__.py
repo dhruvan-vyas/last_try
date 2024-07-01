@@ -13,7 +13,7 @@ is given Then the output animation work with each items.
 + [listfunction](https://github.com/dhruvan-vyas/dvs_printf?tab=readme-ov-file#listfunction): An additional function used by printf to create list[str] based on input values.
 """
 
-__all__=("init", "printf", "listfunction", "showLoding") 
+__all__=("init", "printf", "list_of_str", "showLoding") 
 __version__='1.3'
 __author__='Vyas Dhruvan'
 
