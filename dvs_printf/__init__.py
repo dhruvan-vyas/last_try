@@ -17,7 +17,7 @@ __all__=("init", "printf", "listfunction", "showLoding")
 __version__='1.3'
 __author__='Vyas Dhruvan'
 
-from .__printf__ import printf, listfunction
+from .__printf__ import printf, list_of_str
 from .__init import init
 from .__Loding__ import showLoding
 
